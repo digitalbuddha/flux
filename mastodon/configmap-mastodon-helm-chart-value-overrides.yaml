@@ -52,7 +52,7 @@ data:
           accessMode: ReadWriteOnce
           resources:
             requests:
-              storage: 100Gi
+              storage: 30Gi
       s3:
         enabled: false
         access_key: "00432f37df82dfa0000000003"
@@ -327,7 +327,7 @@ data:
     autoscaling:
       enabled: false
       minReplicas: 1
-      maxReplicas: 100
+      maxReplicas: 3
       targetCPUUtilizationPercentage: 80
       # targetMemoryUtilizationPercentage: 80
 
