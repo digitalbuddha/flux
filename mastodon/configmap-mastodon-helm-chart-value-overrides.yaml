@@ -47,12 +47,12 @@ data:
           accessMode: ReadWriteMany
           resources:
             requests:
-              storage: 10Gi
+              storage: 5Gi
         system:
           accessMode: ReadWriteMany
           resources:
             requests:
-              storage: 10Gi
+              storage: 5Gi
       s3:
         enabled: false
         access_key: "00432f37df82dfa0000000003"
