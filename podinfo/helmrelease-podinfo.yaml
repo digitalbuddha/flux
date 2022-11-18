@@ -13,7 +13,7 @@ spec:
         name: podinfo
         namespace: flux-system
   interval: 15m
-  timeout: 5m
+  timeout: 15m
   releaseName: podinfo
   valuesFrom:
   - kind: ConfigMap
