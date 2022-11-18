@@ -44,12 +44,12 @@ data:
           # ReadWriteOnce is more widely supported than ReadWriteMany, but limits
           # scalability, since it requires the Rails and Sidekiq pods to run on the
           # same node.
-          accessMode: ReadWriteOnce
+          accessMode: ReadWriteMany
           resources:
             requests:
               storage: 10Gi
         system:
-          accessMode: ReadWriteOnce
+          accessMode: ReadWriteMany
           resources:
             requests:
               storage: 30Gi
