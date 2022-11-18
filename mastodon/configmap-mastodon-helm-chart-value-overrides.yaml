@@ -5,7 +5,7 @@ metadata:
   namespace: mastodon
 data:
   values.yaml: |-  # (1)!
-    replicaCount: 1
+    replicaCount: 0
 
     image:
       repository: tootsuite/mastodon
@@ -52,7 +52,7 @@ data:
           accessMode: ReadWriteMany
           resources:
             requests:
-              storage: 30Gi
+              storage: 10Gi
       s3:
         enabled: false
         access_key: "00432f37df82dfa0000000003"
@@ -327,7 +327,7 @@ data:
     autoscaling:
       enabled: false
       minReplicas: 1
-      maxReplicas: 3
+      maxReplicas: 1
       targetCPUUtilizationPercentage: 80
       # targetMemoryUtilizationPercentage: 80
 
